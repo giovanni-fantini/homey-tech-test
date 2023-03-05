@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Questions:
+- User requirements, auth and admin functionality
+Simplistic user model based on email / password auth and with no permission limitations. No admin functionality. Login not required to view resources but to update
+- Projects should be owned by a user?
+No, projects are independent entity and a user can access / modify any project
+- What are the available statuses for Projects and are there invalid transitions of status?
+Assume statuses are 'Not started', 'In progress', 'Done' and there are no invalid transitions
 
-Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+TODO
+- add before action authenticate user
