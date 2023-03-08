@@ -7,6 +7,6 @@ class Project < ApplicationRecord
   validates :status, presence: true, inclusion: { in: STATUSES }
 
   def interaction_history
-    (comments + status_changes).sort_by(&:created_at)
+    (comments + status_changes).sort_by(&:created_at).reverse!
   end
 end
